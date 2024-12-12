@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="tag_name">This is tag</h1>
+    
+
+    <input type="text" id="my_input">
+    <button id="my_btn"> Click here</button>
+
+
+    <script>
+        var btn = document.getElementById("my_btn");
+        var tag = document.getElementById("tag_name");
+        var input = document.getElementById("my_input");
+
+        btn.addEventListener("click", function(){
+            if(input.value != ""){
+                tag.innerHTML = input.value;
+            }else{
+                alert("Please enter something");
+            }
+            
+        })
+
+        
+        
+
+    </script>
+</body>
+</html>
