@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><big><b><u>Lecture 4</u></b></big></h1>
+    <hr/>
+
+    <h1>Tables in HTML</h1>
+     <table>
+        <cation>Food Menu</cation>
+        <!--Table Header-->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <!--Table Body-->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+         </table>
+        
+     <hr/>
+
+     <h1>Colspan &amp; Rowspan Attributes</h1>
+     <table border="black">
+        <cation>Food Menu</cation>
+        <!--Table Header-->
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+                <tr>
+                <th>INR</th>
+                <th>USD</th>
+                </tr>
+            </tr>
+        </thead>
+        <!--Table Body-->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+         </table>
+        </tbody>
+        <hr/>
+
+        <h1>Forms &amp; its Elements in HTML</h1>
+        <form action="/action" >
+        <div>
+        <ul>
+            <li>
+                <h2><u>Input Element</u></h2>
+            </li>
+        </ul>
+        Username <input type="text">
+        <br/>
+        Password <input type="password">
+        <br/>
+        number <input type="number">
+        <br/>
+        Time <input type="time">
+        <br/>
+        Color <input type="color">
+        <br/>
+        Date <input type="date">
+        <br/>
+        Button <input type="button">
+        <br/>
+        Checkbox <input type="checkbox">
+        <br/>
+        Email <input type="email">
+        <br/>
+        </div>
+
+        <div>
+        <ul>
+            <li>
+                <h2><u>Placeholder in Forms</u></h2>
+            </li>
+        </ul>
+        Username <input type="text" placeholder="Enter Name">
+        <br/>
+        Password <input type="password" placeholder="Password">
+        <br/>
+        </div>
+         
+        <div>
+        <ul>
+            <li>
+                <h2><u>Labels in Forms</u></h2>
+            </li>
+        </ul>
+        <label for="username">Enter your Username : </label>
+             <input type="text" id="username" placeholder="Enter Name">
+        </div>
+
+        <div>
+        <ul>
+            <li>
+                <h2><u>Button Element in Forms</u></h2>
+            </li>
+        </ul>
+        <button>Submit</button>
+        <button>Hello</button>
+
+        <button type="submit">Type 1(submit)</button>
+        <button type="button">Type 2(simple)</button>
+        <button type="reset">Type 3(reset)</button>
+        <input type="button" value="Click it">
+        <input type="submit">
+        </div>
+
+    <div>
+        <ul>
+            <li>
+                <h2><u>Name Attribute</u></h2>
+            </li>
+        </ul>
+        <label for="username"> Username : </label>
+        <input type="text" id="username" placeholder="Enter Name" name="user">
+        <br/>
+        <label for="password"> Password : </label>
+        <input type="password" id="password" placeholder="Enter Password" name="pass">
+        <br/>
+        <button>Submit</button>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <h2><u>Checkbox Attribute in Input</u></h2>
+            </li>
+        </ul>
+        <h4>Choose your Subject &ndash;</h4>
+        <input type="checkbox" id="maths" name="subject" value="maths">
+        <label for="maths">Maths</label>
+        <br/>
+        <input type="checkbox" id="science" name="subject" value="science" >
+        <label for="science">Science</label>
+        <br/>
+        <input type="checkbox" id="English" name="subject" value="eng">
+        <label for="English">English</label>
+        <br/>
+        <input type="checkbox" id="social science"  name="subject" value="Ssc." >
+        <label for="social science">Social Science</label>
+        <br/>
+        <input type="checkbox" id="evs"  name="subject" value="evs">
+        <label for="evs">Environmental Studies</label>
+        <br/>
+
+        <button>Submit</button>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <h2><u>Radio Attribute in Input</u></h2>
+            </li>
+        </ul>
+        <h4>Your favourite Fruit is &mdash;</h4>
+
+        <input type="radio" name="fruit" id="apple" value="apple">
+        <label for="apple">Apple</label>
+        <br/>
+        <input type="radio" name="fruit" id="mango" value="mango">
+        <label for="mango">Mango</label>
+        <br/>
+        <button>submit</button>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <h2><u>Select Element in Forms(Dropdown List)</u></h2>
+            </li>
+        </ul>
+        Choose your Profession
+        <select name="profession" id="profession">
+            <option>Select your Option</option>
+            <option value="stu">Student</option>
+            <option value="Dev">Developer</option>
+        </select>
+        <br/>
+        <button>submit</button>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <h2><u>Range Element in Forms</u></h2>
+                </li>
+            </ul>
+            <label for="vol">Select Volume Level: </label>
+            <input type="range" id="vol" name="volume" min="0" max="100" step="10"  value="30">
+            <br/>
+            <button>submit</button>
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                        <h2><u>Text Area in Forms</u></h2>
+                    </li>
+                </ul>
+                <label for="feedback">Please provide your valueable feedback:</label>
+                <textarea id="feedback" placeholder="type here....." rows="2" cols="50"></textarea>
+                <br/>
+                <button>submit</button>
+                </div>
+
+        </form>
+        
+</body>
+</html>

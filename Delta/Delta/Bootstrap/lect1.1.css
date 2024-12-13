@@ -1,0 +1,21 @@
+.container{
+    background-color: rgb(41, 39, 50);
+    color: #fff;
+    /* background-size: cover; */
+}
+/* .btn-success{
+    background-color: pink;
+} */
+
+.card-img-top{
+    border-bottom: 2px solid gray;
+}
+
+.card{
+    border: 1px solid grey;
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
