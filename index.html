@@ -43,7 +43,8 @@
 
         console.log("Methods in JS");
 
-// let EmpNum = prompt("enter a value:");
+// let EmpNum = "Emp1";
+let EmpNum = prompt("enter a value:");
 let details = {
     Emp1: {
         id: "001",
@@ -61,26 +62,22 @@ let details = {
         id: "004",
         Dept: "IT"
     },
+    entries:function(){
+        for(let i in details){
+            if(i == EmpNum){
+                return details[i];
+            }
+            
+        }
+        
 
-   entries: function(){
-    // return EmpNum;
-    // Emp1 == 
-    // if(EmpNum==Emp1){
-    //     return "these are details of emp1" + this.Emp1;
-    // }
-    // else if(EmpNum==Emp2){
-    //     return "these are details of emp2" + this.Emp2;
-    // }
-
-//     for(let i= 0; i<=this.details.length(); i++){
-//       return details[i]; 
-//     }
-// return .length;
-   }
+    }
    
    
 }
-console.log(details.length);
+
+console.log(Object.keys(details).length);
+
         
     </script>
 </body>
