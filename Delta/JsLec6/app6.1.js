@@ -142,4 +142,36 @@ function evenorOdd(request){
 } 
 let request= "odd";
 
+const calculator = {
+    num: 33,
+    add: function(a, b){
+        return a + b;
+    },
 
+    sub: function(a, b){
+        return a -b;
+    },
+
+    mul: function(a, b){
+        return a * b;
+    }
+
+};
+console.log(calculator.num);
+console.log(calculator.add(2, 4));
+console.log(calculator.sub(2, 4));
+console.log(calculator.mul(2, 4));
+
+
+const student ={
+    name: "Pranjal",
+    age: 21,
+    eng: 88,
+    java: 70,
+    python: 79,
+    avg(){
+        return (this.eng + this.java + this.python)/3; 
+    }
+
+};
+console.log(student.avg());
