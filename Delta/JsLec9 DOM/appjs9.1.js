@@ -38,5 +38,5 @@ console.dir(para.innerHTML);
 // 1. obj.getAttribute(attr): ye ek specific attribute kya value set h vo batata h
 // 2. obj.setAttribute(attr,val): used to change the value of an attribute
 // these are called getters and setters. It is a set of two fuctions via which we can get and set the values.
-
- 
+let img = document.querySelector('#mainImg'); 
+console.dir(img);
