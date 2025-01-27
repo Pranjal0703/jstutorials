@@ -44,7 +44,8 @@ console.log(image.getAttribute("id")); //isse kisi bhi element ka attribute pta 
 console.log(image.setAttribute("id", "spriderman")); //isse kisi bhi element ke attribute ko change kr skte h or nya attribute add bhi kr skte h(means uski id, class, src ko)
 
 
-
+// MANIPULATING STYLING
+//
 
 
 
