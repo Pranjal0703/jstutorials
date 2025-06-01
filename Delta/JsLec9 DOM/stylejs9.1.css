@@ -20,10 +20,17 @@ body {
   .oldImg {
     height: 200px;
     width: 200px;
-    margin-right: 1rem;
+    margin-right: 1rem;   
   }
   
   #description {
     background-color: antiquewhite;
   }
-  
+
+  .images{
+    color: #f2f2f2;
+    background-color: #555;
+    height: 25px;
+  }
+
+   

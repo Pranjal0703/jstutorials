@@ -45,7 +45,119 @@ console.log(image.setAttribute("id", "spriderman")); //isse kisi bhi element ke 
 
 
 // MANIPULATING STYLING
-//
+
+// To change the styling of any elememt: obj.style  
+// In JS cammel case is used eg. backgroundColor
+// style property will only show the css that is written inline
+let heading = document.querySelector('h1');
+console.dir(heading.style);
+heading.style.color = 'purple';
+heading.style.backgroundColor = 'yellow';
+
+let links = document.querySelectorAll(".box a");
+for(link of links){
+    link.style.color ='red';
+} 
 
 
+// classList
 
+// used to set the value of a class
+// obj.classList - to check the list of classes given to an object
+// classList.add() - to add new classes
+// classList.remove() - to remove classes
+// classList.contain() - to check if class exist
+// classList.toggle() - to toggle bw add and remove(just like a switch at home) This methods check if a class already exists or not. If a class exists it will remove that class and if the class does not exists it will add the class.
+
+let images = document.querySelector('img');
+console.log(images.classList);
+
+images.classList.add("newClass");
+console.log(images.classList);
+
+images.classList.remove("mainImg1");
+console.log(images.classList);  
+
+images.classList.contains("mainImg1");
+console.log(images.classList);
+
+images.classList.toggle("mainImg1");
+console.log(images.classList);
+
+
+// NAVIGATION PROPERTY (NAVIGATION ON PAGE)
+// there are 3 properties in navigation:
+// 1. parentElement
+// 2. children
+// 3. previousElemntSibling / nextElementSibling
+
+// this property is used to check the parent of an element, children of an element and sibling of an element(next or previous)  
+
+let headings = document.querySelector('h4');
+console.log(headings.parentElement);
+console.log(headings.children);
+console.log(headings.previousElementSibling);
+console.log(headings.nextElementSibling);
+
+
+// ADDING ELEMENTS ON PAGE
+
+// To craeta an element we use : document.createElement('p');
+
+// document.createElement('p');
+let newP = document.createElement('p');
+
+newP.innerText = "Hii, I am a new P inserted usinf appendCHild function. ";
+
+// To insert an element into the page:
+
+// 1.) appendChild(element): to insert an element in an obeject in a nesting form (eg. to insert an element in the body tag this method will be used):
+let box = document.querySelector('.box');
+box.appendChild(newP);
+
+// 2.) append(element): to append element, string or text. In this we can add some text or string in a already appendded element:
+newP.append("this is added text using the append function");
+
+// 3.) prepend(element): to insert an element at the starting:
+box.prepend(newP);
+
+// 4.) insertAdjacentElement(where, element): In this we can define where exactly we want to add a new element and which element we want to add):
+let parag = document.querySelector('p');
+
+// 'beforebegin': Before the targetElement itself.(When we want to add the new elemnt just before the targeted element)
+let btn1 = document.createElement('button');
+btn1.innerText = "button1 - beforebegin";
+para.insertAdjacentElement('beforebegin', btn1);
+
+// 'afterbegin': Just inside the targetElement, before its first child.
+let btn2 = document.createElement('button');
+btn2.innerText = "button2 - afterbegin";
+para.insertAdjacentElement('afterbegin', btn2);
+
+// 'beforeend': Just inside the targetElement, after its last child.
+let btn3 = document.createElement('button');
+btn3.innerText = "button3 - beforeend";
+para.insertAdjacentElement('beforeend', btn3);
+
+// 'afterend': After the targetElement itself.
+let btn4 = document.createElement('button');
+btn4.innerText = "button4 - afterend";
+para.insertAdjacentElement('afterend', btn4);
+
+
+// REMOVING ELEMENT: To remove an element from the page
+let newBtnrc = document.createElement('button');
+newBtnrc.innerText = "button - removed using removeChild()";
+let btnbox1 = document.querySelector('.box');
+btnbox1.appendChild(newBtnrc);
+
+// removeChild(element): acts similar to the appendChild function
+btnbox1.removeChild(newBtnrc);
+
+// remove(element): acts similarly to the append function( mostly used)
+let newBtnr = document.createElement('button');
+newBtnr.innerText = "button - removed using remove()";
+let btnbox2 = document.querySelector('.box');
+btnbox2.appendChild(newBtnr);
+
+newBtnr.remove();
