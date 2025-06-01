@@ -1,0 +1,2 @@
+// DOM EVENTS : events are signals that something is occured(user input/ any action)
+// inline events: events that are written in html file eg:  <button onclick="console.log('button was clicked');"> click here</button> (written in html file)
