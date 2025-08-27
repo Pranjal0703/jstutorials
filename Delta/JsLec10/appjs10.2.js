@@ -82,4 +82,4 @@ char.addEventListener("keydown", function(event){
     } else if(event.code == "ArrowLeft"){
         console.log("character moves Left Side");
     }    
-})
+})     
