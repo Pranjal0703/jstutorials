@@ -1,127 +1,95 @@
-/* *{
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body{
     text-align: center;
 }
 
-.box-container{
-    display: flex;
-    justify-content: center;
-}
-
-.box{
+.btn{
     height: 200px;
     width: 200px;
-    border: 6px solid #5d5d5d;
     border-radius: 20%;
+    border: 4px solid black;
     margin: 2rem;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
 .red{
-    background-color: rgb(255, 65, 65);
+    background-color:#d95980;
 }
-.yellow{ 
-    background-color: rgb(255, 255, 85);
+
+.yellow{
+    background-color: #f99b45;
 }
+
 .green{
-    background-color: rgb(85, 255, 85);
+    background-color: #63aac0;
 }
+
 .purple{
-    background-color: rgb(255, 95, 255);
-} */
+    background-color: #819ff9;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Luckiest Guy', cursive;
+.score{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    padding: 80px;
+    width: 70%;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.532);
     text-align: center;
-    transition: all 0.3s ease;
 }
 
-body {
-    background: linear-gradient(135deg, #fddde6, #cdebf9);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 2rem;
+.score h1{
+    font-size: 48px;
+    font-weight: 800;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #333;
-    text-shadow: 2px 2px #fff;
-    margin-bottom: 0.5rem;
+.score h2{
+    font-size: 38px;
 }
 
-h3 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 2rem;
+.score h4{
+    font-size: 30px;
 }
 
-.box-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.score p{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
 }
 
-.upper-box, .lower-box {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.scoredisplay{
+    display: none;
 }
 
-.box {
-    height: 160px;
-    width: 160px;
-    border: 6px solid #333;
-    border-radius: 25%;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+.flash{
+    background-color: white;
 }
-
-.box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-}
-
-/* Individual colors with some glow effect */
-.red {
-    background-color: rgb(255, 65, 65);
-    box-shadow: 0 0 20px rgba(255, 65, 65, 0.6);
-}
-
-.yellow {
-    background-color: rgb(255, 255, 85);
-    color: #333;
-    box-shadow: 0 0 20px rgba(255, 255, 85, 0.6);
-}
-
-.green {
-    background-color: rgb(85, 255, 85);
-    box-shadow: 0 0 20px rgba(85, 255, 85, 0.6);
-}
-
-.purple {
-    background-color: rgb(255, 95, 255);
-    box-shadow: 0 0 20px rgba(255, 95, 255, 0.6);
-}
-
-.gameflash{
-    background-color: #fff;
-}
-
 
 .userflash{
-    background-color: #03d9ff;
+    background-color: green;
+}
+
+.overlay{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100%;
+    background: linear-gradient(rgba(255, 0, 0, 0.76), rgba(255, 0, 0, 0.621));
+}
+
+.overlaydisplay{
+    display: none;
+}
+
+.h3size{
+    font-size: 90px;
 }
