@@ -99,3 +99,5 @@ console.log(stuData);
 
 
 // Http Headers
+// We can also send headers with our api requests or headers ki form me hum data bhejte h apni API request ko. basically inka kaam hota h ye additonal info supply krte h request me bhi or response me bhi.
+
